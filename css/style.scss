@@ -8,6 +8,9 @@ $color: #0066FF;
 body {
     background: $color;
 }
+header {
+    color: #FFFFFF;
+}
 p {
     font-weight: 400;
     transform: rotate(0.05deg);
@@ -16,6 +19,6 @@ a {
     color: $color;
     text-decoration: none;
 }
-section, article {
+main {
     background: #FFFFFF;
 }
