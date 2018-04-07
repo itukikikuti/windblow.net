@@ -1,0 +1,6 @@
+---
+---
+a {
+    color: {{ site.color }};
+    text-decoration: none;
+}
