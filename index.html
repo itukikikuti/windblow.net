@@ -10,6 +10,10 @@ layout: outline
 </section>
 {% endfor %}
 
-
+{% if paginator.page == 2 %}
+<a{% if paginator.previous_page %} href="/"{% endif %}>前</a>
+{% else %}
 <a{% if paginator.previous_page %} href="/page{{ paginator.previous_page }}"{% endif %}>前</a>
+{% endif %}
+
 <a{% if paginator.next_page %} href="/page{{ paginator.next_page }}"{% endif %}>次</a>
