@@ -1,9 +1,11 @@
-<style>
+---
+---
+$color: #0066FF;
 html {
     font-family: "Mplus 1p";
 }
 header {
-    background: {{ site.theme_color }};
+    background: $color;
     a {
         color: #FFFFFF;
     }
@@ -13,7 +15,6 @@ p {
     transform: rotate(0.05deg);
 }
 a {
-    color: #0066FF;
+    color: $color;
     text-decoration: none;
 }
-</style>
