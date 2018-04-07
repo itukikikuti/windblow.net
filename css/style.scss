@@ -9,7 +9,12 @@ body {
     background: $color;
 }
 header {
-    color: #FFFFFF;
+    h1 {
+        color: #FFFFFF;
+    }
+    nav {
+        color: #FFFFFF;
+    }
 }
 p {
     font-weight: 400;
