@@ -3,6 +3,8 @@
 $color: {{ site.color }};
 html {
     font-family: "Mplus 1p";
+    margin: 0;
+    padding: 0;
 }
 header {
     background: $color;
