@@ -2,10 +2,8 @@
 layout: outline
 title: 菊池いつきlog
 ---
-<ul style="list-style-position: inside">
+<ul>
     {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d %B %Y" }}
-        </li>
+    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y/%m/%d" }}</li>
     {% endfor %}
 </ul>
