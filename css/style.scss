@@ -4,8 +4,11 @@ $color: #0066FF;
 
 * {
     font-family: "Mplus 1p";
+}
+p {
     font-weight: 400;
-    transform: rotate(0.01deg);
+    font-size: 32px;
+    transform: scale(0.5);
 }
 a {
     color: $color;
