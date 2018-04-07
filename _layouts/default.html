@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-        <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/normalize.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" />
         <link rel="alternate" type="application/rss+xml" title="フィード" href="/feed.xml" />
+        {% include style.html %}
     </head>
     <body>
         {{ content }}
