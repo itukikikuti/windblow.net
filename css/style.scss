@@ -5,6 +5,9 @@ $color: #0066FF;
 * {
     font-family: "Mplus 1p";
 }
+html {
+    min-height: 100%;
+}
 body {
     background: $color;
     min-height: 100%;
