@@ -2,6 +2,9 @@
 ---
 $color: #0066FF;
 
+* {
+    transform: rotate(0.05deg);
+}
 a {
     color: $color;
     text-decoration: none;
