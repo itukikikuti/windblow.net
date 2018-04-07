@@ -2,15 +2,12 @@
 ---
 $color: #0066FF;
 
-* {
+html {
+    background: $color;
     font-family: "Mplus 1p";
 }
-html {
-    min-height: 100%;
-}
 body {
-    background: $color;
-    min-height: 100%;
+    background: $FFFFFF;
 }
 header {
     a {
