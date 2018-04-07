@@ -1,7 +1,7 @@
 ---
 layout: outline
 ---
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <section>
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     {{ post.excerpt }}
@@ -9,3 +9,7 @@ layout: outline
     <time>{{ post.date | date: "%Y/%m/%d" }}</time>
 </section>
 {% endfor %}
+
+
+<a{% if paginator.previous_page %} href="/page{{ paginator.previous_page }}"{% endif %}>前</a>
+<a{% if paginator.next_page %} href="/page{{ paginator.next_page }}"{% endif %}>次</a>
