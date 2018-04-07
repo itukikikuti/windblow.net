@@ -1,6 +1,6 @@
 ---
 ---
-$color: #0066FF;
+$color: {{ site.theme_color }};
 html {
     font-family: "Mplus 1p";
 }
