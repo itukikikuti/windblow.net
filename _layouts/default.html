@@ -2,8 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="" />
-        <title>{{ page.title }}</title>
+        <title>{% if page %}{{ page.title }}{% endif %} | {{ site.name }}</title>
         <link rel="alternate" type="application/rss+xml" title="フィード" href="/feed.xml" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" />
     </head>
