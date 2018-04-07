@@ -5,6 +5,9 @@ $color: #0066FF;
 * {
     font-family: "Mplus 1p";
 }
+body {
+    background: $color;
+}
 p {
     font-weight: 400;
     transform: rotate(0.05deg);
@@ -12,4 +15,7 @@ p {
 a {
     color: $color;
     text-decoration: none;
+}
+section, article {
+    background: #FFFFFF;
 }
