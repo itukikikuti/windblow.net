@@ -3,14 +3,6 @@
 $color: {{ site.color }};
 * {
     font-family: "Mplus 1p";
-    margin: 0;
-    padding: 0;
-}
-header {
-    background: $color;
-    a {
-        color: #FFFFFF;
-    }
 }
 p {
     font-weight: 400;
@@ -19,4 +11,18 @@ p {
 a {
     color: $color;
     text-decoration: none;
+}
+body {
+    display: flex;
+}
+header {
+    width: 300px;
+    background: $color;
+    a {
+        color: #FFFFFF;
+    }
+}
+main {
+    flex: 1;
+    order: 2;
 }
