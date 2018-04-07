@@ -12,10 +12,8 @@ a {
     color: $color;
     text-decoration: none;
 }
-body {
-    display: flex;
-}
 header {
+    position: fixed;
     width: 300px;
     background: $color;
     a {
@@ -23,5 +21,4 @@ header {
     }
 }
 main {
-    flex: 1;
 }
