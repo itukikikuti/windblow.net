@@ -1,11 +1,17 @@
 ---
 layout: outline
 ---
+<script>
+    function Popup(url)
+    {
+        window.open(url, "シェア", "width=500,height=500,scrollbars=yes,resizable=yes").focus();
+    }
+</script>
 <article>
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
     <time>{{ page.date | date: "%Y/%m/%d" }}</time>
     {{ content }}
-    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}" target="_blank">Twitter</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">Facebook</a>
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">Google+</a>
+    <a href="javascript:Popup(https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }});">Twitter</a>
+    <a href="javascript:Popup(https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }});">Facebook</a>
+    <a href="javascript:Popup(https://plus.google.com/share?url={{ site.url }}{{ page.url }});">Google+</a>
 </article>
