@@ -28,10 +28,12 @@ header {
     }
     a {
         color: $white;
-        transform: rotate(0.05deg);
     }
     nav ul {
         list-style: none;
+        li {
+            transform: rotate(0.05deg);
+        }
     }
     small {
         color: $white;
@@ -42,6 +44,7 @@ header {
 }
 main {
     margin-left: 320px;
+    margin-left: 20px;
     margin-bottom: 50px;
     max-width: 700px;
     nav ul {
