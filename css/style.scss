@@ -3,17 +3,15 @@
 $color: {{ site.color }};
 $white: #FFF;
 $black: #333;
-* {
-    font-family: "Mplus 1p";
-    font-weight: 400;
-    color: $black;
-}
 a {
     color: $color;
     text-decoration: none;
 }
 body {
     background: $white;
+    font-family: "Mplus 1p";
+    font-weight: 400;
+    color: $black;
 }
 header {
     position: fixed;
@@ -23,10 +21,8 @@ header {
     height: 100%;
     background: $color;
     h1 {
+        font-weight: 100;
         text-align: center;
-        a {
-            font-weight: 100;
-        }
     }
     a {
         color: $white;
@@ -45,7 +41,7 @@ header {
 main {
     margin-left: 320px;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     max-width: 700px;
     nav ul {
         display: flex;
@@ -62,7 +58,7 @@ main {
 article {
     margin: 20px 0px;
     padding: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
     h2 a {
         font-weight: 900;
         font-size: 40px;
