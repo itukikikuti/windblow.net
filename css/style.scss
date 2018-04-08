@@ -5,11 +5,10 @@ $white: #FFF;
 $black: #333;
 * {
     font-family: "Mplus 1p";
+    font-weight: 400;
     color: $black;
 }
 p {
-    font-weight: 400;
-    transform: rotate(0.05deg);
 }
 a {
     color: $color;
@@ -31,6 +30,7 @@ header {
     }
     a {
         color: $white;
+        transform: rotate(0.05deg);
     }
     nav ul {
         list-style: none;
@@ -39,20 +39,22 @@ header {
         color: $white;
         font-size: 10px;
         margin-left: 40px;
+        transform: rotate(0.05deg);
     }
 }
 main {
     margin-left: 320px;
+    margin-bottom: 50px;
     max-width: 700px;
     nav ul {
         display: flex;
         justify-content: center;
         list-style: none;
-        margin-bottom: 50px;
         li {
             font-size: 20px;
             margin-left: 10px;
             margin-right: 10px;
+            transform: rotate(0.05deg);
         }
     }
 }
@@ -71,5 +73,6 @@ article {
     p {
         font-size: 20px;
         line-height: 1.5;
+        transform: rotate(0.05deg);
     }
 }
