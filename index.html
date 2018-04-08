@@ -12,12 +12,12 @@ layout: outline
 
 {% if paginator.previous_page %}
 {% if paginator.page == 2 %}
-<a href="/">前</a>
+<a href="/">前の投稿へ</a>
 {% else %}
-<a href="/page{{ paginator.previous_page }}">前</a>
+<a href="/page{{ paginator.previous_page }}">前の投稿へ</a>
 {% endif %}
 {% endif %}
 
 {% if paginator.next_page %}
-<a href="/page{{ paginator.next_page }}">次</a>
+<a href="/page{{ paginator.next_page }}">次の投稿へ</a>
 {% endif %}
