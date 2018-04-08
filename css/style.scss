@@ -23,17 +23,17 @@ header {
     height: 100%;
     background: $color;
     h1 {
-        font-weight: 100;
         text-align: center;
+        a {
+            font-weight: 100;
+        }
     }
     a {
         color: $white;
+        transform: rotate(0.05deg);
     }
     nav ul {
         list-style: none;
-        li {
-            transform: rotate(0.05deg);
-        }
     }
     small {
         color: $white;
