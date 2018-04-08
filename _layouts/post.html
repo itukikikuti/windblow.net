@@ -5,5 +5,7 @@ layout: outline
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
     <time>{{ page.date | date: "%Y/%m/%d" }}</time>
     {{ content }}
-    <div class="addthis_inline_share_toolbox"></div>
+    <a href="https://twitter.com/intent/tweet?url={{ post.url }}">Twitter</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ post.url }}">Facebook</a>
+    <a href="https://plus.google.com/share?url={{ post.url }}">Google+</a>
 </article>
