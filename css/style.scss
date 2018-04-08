@@ -35,20 +35,33 @@ header {
     nav ul {
         list-style: none;
     }
+    small {
+        color: $white;
+        font-size: 8px;
+        margin-left: 40px;
+    }
 }
 main {
     margin-left: 300px;
+    max-width: 700px;
+    nav ul {
+        display: flex;
+    }
 }
 article {
     margin: 20px;
     padding: 10px;
-    max-width: 700px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     h2 a {
         font-weight: 900;
+        font-size: 32px;
         color: $black;
         &:hover {
             color: $color;
         }
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
