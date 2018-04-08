@@ -5,7 +5,7 @@ layout: outline
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
     <time>{{ page.date | date: "%Y/%m/%d" }}</time>
     {{ content }}
-    <a href="https://twitter.com/intent/tweet?url={{ post.url }}">Twitter</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ post.url }}">Facebook</a>
-    <a href="https://plus.google.com/share?url={{ post.url }}">Google+</a>
+    <a href="https://twitter.com/intent/tweet?url={{ page.url | cgi_escape }}">Twitter</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | cgi_escape }}">Facebook</a>
+    <a href="https://plus.google.com/share?url={{ page.url | cgi_escape }}">Google+</a>
 </article>
