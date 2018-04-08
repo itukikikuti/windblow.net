@@ -46,15 +46,19 @@ main {
     max-width: 700px;
     nav ul {
         display: flex;
+        justify-content: center;
+        li {
+            font-size: 24px;
+        }
     }
 }
 article {
     margin: 20px 0px;
     padding: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
     h2 a {
         font-weight: 900;
-        font-size: 32px;
+        font-size: 64px;
         color: $black;
         &:hover {
             color: $color;
