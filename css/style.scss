@@ -8,10 +8,10 @@ a {
     text-decoration: none;
 }
 body {
-    background: $white;
+    background: $black;
     font-family: "Mplus 1p";
     font-weight: 400;
-    color: $black;
+    color: $white;
 }
 header {
     position: fixed;
@@ -25,14 +25,14 @@ header {
         text-align: center;
     }
     a {
-        color: $white;
+        color: $black;
         transform: rotate(0.05deg);
     }
     nav ul {
         list-style: none;
     }
     small {
-        color: $white;
+        color: $black;
         font-size: 10px;
         margin-left: 40px;
         transform: rotate(0.05deg);
@@ -62,7 +62,7 @@ article {
     h2 a {
         font-weight: 900;
         font-size: 40px;
-        color: $black;
+        color: $white;
         &:hover {
             color: $color;
         }
