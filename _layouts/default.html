@@ -1,9 +1,22 @@
+{% if page.title %}
+{% assign title = page.title + " | " + site.title %}
+{% else %}
+{% assign title = site.title %}
+{% endif %}
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="ja" xml:lang="ja">
     <head>
         <meta charset="UTF-8" />
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:description" content="{{ page.excerpt }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        <meta property="og:image" content="{{ site.url }}/assets/icon256.png" />
         <meta name="theme-color" content="{{ site.color }}" />
-        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+        
+        <title>{{ title }}</title>
+        
         <link rel="stylesheet" href="/css/normalize.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" />
         <link rel="stylesheet" href="/css/style.css" />
