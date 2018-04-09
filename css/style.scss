@@ -8,7 +8,7 @@ a {
     text-decoration: none;
 }
 body {
-    background: $black;
+    background: linear-gradient(90deg, $black * 3, $black);
     font-family: "Mplus 1p";
     font-weight: 400;
     color: $white;
