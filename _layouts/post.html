@@ -9,7 +9,7 @@ layout: outline
 </script>
 <article>
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-    <time>{{ page.date | date: "%Y/%m/%d" }}</time>
+    <time>{{ page.date | date: "%Y-%m-%d" }}</time>
     {{ content }}
     <a href="javascript:Popup(&quot;https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&quot;);">Twitter</a>
     <a href="javascript:Popup(&quot;https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&quot;);">Facebook</a>
