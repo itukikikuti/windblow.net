@@ -11,7 +11,7 @@ layout: outline
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
     <time>{{ page.date | date: "%Y-%m-%d" }}</time>
     {{ content }}
-    <a href="javascript:Popup(&quot;https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&quot;);">Twitter</a>
-    <a href="javascript:Popup(&quot;https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&quot;);">Facebook</a>
-    <a href="javascript:Popup(&quot;https://plus.google.com/share?url={{ site.url }}{{ page.url }}&quot;);">Google+</a>
+    <a href="javascript:Popup(&quot;https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url | cgi_escape }}&quot;);">Twitter</a>
+    <a href="javascript:Popup(&quot;https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | cgi_escape }}&quot;);">Facebook</a>
+    <a href="javascript:Popup(&quot;https://plus.google.com/share?url={{ site.url }}{{ page.url | cgi_escape }}&quot;);">Google+</a>
 </article>
