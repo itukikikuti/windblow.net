@@ -1,12 +1,21 @@
 ---
 layout: outline
 ---
+<script>
+    function Popup(url)
+    {
+        window.open(url, "シェア", "width=500,height=500").focus();
+    }
+</script>
 {% for post in paginator.posts %}
 <article>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <time>{{ post.date | date: "%Y/%m/%d" }}</time>
+    <time>{{ post.date | date: "%Y-%m-%d" }}</time>
     {{ post.excerpt }}
     <a href="{{ post.url }}">more</a>
+    <a href="javascript:Popup(&quot;https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&quot;);">Twitter</a>
+    <a href="javascript:Popup(&quot;https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&quot;);">Facebook</a>
+    <a href="javascript:Popup(&quot;https://plus.google.com/share?url={{ site.url }}{{ page.url }}&quot;);">Google+</a>
 </article>
 {% endfor %}
 
