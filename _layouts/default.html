@@ -1,7 +1,7 @@
 {% if page.title %}
-{% assign title = page.title " | " site.title %}
+{% capture title %}{{page.title}} | {{site.title}}{% endcapture %}
 {% else %}
-{% assign title = site.title %}
+{% capture title %}{{site.title}}{% endcapture %}
 {% endif %}
 
 <!DOCTYPE html>
