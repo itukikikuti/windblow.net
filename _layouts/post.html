@@ -2,8 +2,8 @@
 layout: outline
 ---
 <article>
-    <h2><a href="{{page.url}}">{{page.title}}</a></h2>
-    <time>{{page.date | date: "%Y-%m-%d"}}</time>
-    {{content}}
-    {% include share.html url=page.url %}
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <time>{{ page.date | date: "%Y-%m-%d" }}</time>
+    {{ content }}
+    {% include share.html url = page.url %}
 </article>
