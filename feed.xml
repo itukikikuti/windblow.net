@@ -1,24 +1,17 @@
 ---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>{{ site.title | xml_escape }}</title>
-        <link>{{ site.url }}</link>
-        {% for post in site.posts %}
-        {% unless post.link %}
-        <item>
-            <title>{{ post.title | xml_escape }}</title>
-            {% if post.excerpt %}
-            <description>{{ post.excerpt | xml_escape }}</description>
-            {% else %}
-            <description>{{ post.content | xml_escape }}</description>
-            {% endif %}
-            <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-            <link>{{ site.url }}{{ post.url }}</link>
-            <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-        </item>
-        {% endunless %}
-        {% endfor %}
-    </channel>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+    <title>{{ site.title | xml_escape }}</title>
+    <link rel="alternate" type="text/html" href="{{ site.url }}" />
+    <id>{{ site.url }}</id>
+    {% for post in site.posts %}
+    <entry>
+        <title>{{ post.title | xml_escape }}</title>
+        <link rel="alternate" type="text/html" href="{{ site.url }}{{ post.url }}" />
+        <id>{{ site.url }}{{ post.url }}</id>
+        <updated>{{ post.date | date: %Y-%m-%dT%H:%M:%SZ }}</updated>
+        <summary>{{ post.excerpt | xml_escape }}</summary>
+    </entry>
+    {% endfor %}
 </rss>
