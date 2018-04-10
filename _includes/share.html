@@ -4,6 +4,6 @@
         window.open(url, "シェア", "width=500,height=500").focus();
     }
 </script>
-<a href="javascript:Popup(&quot;https://twitter.com/share?url={{site.url}}{{include.url | url_encode}}&quot;);">Twitter</a>
-<a href="javascript:Popup(&quot;https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{include.url | url_encode}}&quot;);">Facebook</a>
-<a href="javascript:Popup(&quot;https://plus.google.com/share?url={{site.url}}{{include.url | url_encode}}&quot;);">Google+</a>
+<a href="javascript:Popup(&quot;https://twitter.com/intent/tweet?url={{site.url}}{{include.url | url_encode | url_encode}}&quot;);">Twitter</a>
+<a href="javascript:Popup(&quot;https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{include.url | url_encode | url_encode}}&quot;);">Facebook</a>
+<a href="javascript:Popup(&quot;https://plus.google.com/share?url={{site.url}}{{include.url | url_encode | url_encode}}&quot;);">Google+</a>
