@@ -78,13 +78,13 @@ article {
     a {
         color: $white;
         :nth-last-of-type(3) {
-            backbround: #55acee;
+            background: #55acee;
         }
         :nth-last-of-type(2) {
-            backbround: #3B5998;
+            background: #3B5998;
         }
         :nth-last-of-type(1) {
-            backbround: #dd4b39;
+            background: #dd4b39;
         }
     }
 }
