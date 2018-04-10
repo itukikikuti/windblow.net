@@ -75,15 +75,15 @@ article {
         line-height: 1.5;
         transform: rotate(0.05deg);
     }
-    a {
+    &->a {
         color: $white;
-        :nth-last-of-type(3) {
+        &:nth-last-of-type(3) {
             background: #55acee;
         }
-        :nth-last-of-type(2) {
+        &:nth-last-of-type(2) {
             background: #3B5998;
         }
-        :nth-last-of-type(1) {
+        &:nth-last-of-type(1) {
             background: #dd4b39;
         }
     }
