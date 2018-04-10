@@ -14,4 +14,4 @@
         <summary>{{ post.excerpt | xml_escape }}</summary>
     </entry>
     {% endfor %}
-</rss>
+</feed>
