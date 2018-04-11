@@ -3,8 +3,8 @@ for (var i = 0; i < document.images.length; i++)
     var image = document.images[i];
     var div = document.createElement("div");
     Wrap(image, div);
-    div.style.width = image.style.width;
-    div.style.height = image.style.height;
+    div.width = image.width;
+    div.height = image.height;
 }
 function Popup(url)
 {
