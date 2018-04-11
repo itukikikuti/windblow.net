@@ -5,7 +5,6 @@ for (var i = 0; i < document.images.length; i++)
     a.href = image.src;
     Wrap(image, a);
     document.body.className = "modal";
-    div.className = "modal";
     baguetteBox.run(".modal");
 }
 function Popup(url)
