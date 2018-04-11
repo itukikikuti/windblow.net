@@ -5,7 +5,7 @@ for (var i = 0; i < document.images.length; i++)
     a.href = image.src;
     Wrap(image, a);
     
-    var articles = document.getElementsbyTagName("article");
+    var articles = document.getElementsByTagName("article");
     for (var j = 0; j < articles.length; i++)
     {
         articles.className = "modal";
