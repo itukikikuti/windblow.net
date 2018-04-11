@@ -4,7 +4,13 @@ for (var i = 0; i < document.images.length; i++)
     var a = document.createElement("a");
     a.href = image.src;
     Wrap(image, a);
-    document.body.className = "modal";
+    
+    var articles = document.getElementsbyTagName("article");
+    for (var j = 0; j < articles.length; i++)
+    {
+        articles.className = "modal";
+    }
+    
     baguetteBox.run(".modal");
 }
 function Popup(url)
