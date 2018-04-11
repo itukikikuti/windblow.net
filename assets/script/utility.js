@@ -1,6 +1,6 @@
-for (var image in document.images)
+for (var i in document.images)
 {
-    Wrap(image, document.createElement("div"));
+    Wrap(document.images[i], document.createElement("div"));
 }
 function Popup(url)
 {
