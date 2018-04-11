@@ -1,4 +1,4 @@
-for (var i in document.images)
+for (var i = 0; i < document.images.length; i++)
 {
     Wrap(document.images[i], document.createElement("div"));
 }
