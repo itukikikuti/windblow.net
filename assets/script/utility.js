@@ -1,4 +1,4 @@
-vfor (var i = 0; i < document.images.length; i++)
+for (var i = 0; i < document.images.length; i++)
 {
     var image = document.images[i];
     var a = document.createElement("a");
