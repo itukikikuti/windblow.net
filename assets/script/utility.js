@@ -8,6 +8,6 @@ function Popup(url)
 }
 function Wrap(element, wrapper)
 {
-    element.parentNode.insertBefore(wrapper, element);
+    element.parentNode.before(wrapper);
     wrapper.appendChild(element);
 }
