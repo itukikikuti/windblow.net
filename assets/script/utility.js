@@ -5,7 +5,7 @@ for (var i = 0; i < document.images.length; i++)
     a.href = image.src;
     Wrap(image, a);
     var div = document.createElement("div");
-    div.class = "modal";
+    div.className = "modal";
     Wrap(a, div);
     baguetteBox.run(".modal");
 }
