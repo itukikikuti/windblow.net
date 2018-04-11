@@ -1,0 +1,11 @@
+7zip
+Fbxsdk
+Blender
+Gimp
+Chrome
+Unity
+FolderSize
+KeePass
+Steam
+VLC
+WinMarge
