@@ -4,9 +4,8 @@ for (var i = 0; i < document.images.length; i++)
     var a = document.createElement("a");
     a.href = image.src;
     Wrap(image, a);
-    var div = document.createElement("div");
+    document.body.className = "modal";
     div.className = "modal";
-    Wrap(a, div);
     baguetteBox.run(".modal");
 }
 function Popup(url)
