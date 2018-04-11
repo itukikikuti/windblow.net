@@ -6,7 +6,7 @@ for (var i = 0; i < document.images.length; i++)
     Wrap(image, a);
     
     var articles = document.getElementsByTagName("article");
-    for (var j = 0; j < articles.length; i++)
+    for (var j = 0; j < articles.length; j++)
     {
         articles.className = "modal";
     }
