@@ -75,10 +75,10 @@ article {
         font-size: 20px;
         line-height: 1.5;
         transform: rotate(0.05deg);
-        img {
-            display: block;
-            max-width: 680px;
-        }
+    }
+    img {
+        display: block;
+        max-width: 680px;
     }
     &>a {
         display:inline-block;
