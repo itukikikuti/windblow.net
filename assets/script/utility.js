@@ -9,7 +9,7 @@ for (var i = 0; i < document.images.length; i++)
     var image = document.images[i];
     var a = document.createElement("a");
     a.href = image.src;
-    a.style.display = "block";
+    //a.style.display = "block";
     Wrap(image, a);
 }
     
