@@ -2,9 +2,11 @@
 layout: post
 title: Sticky Cat
 ---
+ダウンロードはこちら
 [iOS](http://appstore.com/stickycatclip)
 [Android](https://play.google.com/store/apps/details?id=net.windblow.stickycat)
 
+### ギャラリー
 ![Sticky Cat](/assets/StickyCat/scan00.jpg)
 ![Sticky Cat](/assets/StickyCat/scan01.jpg)
 ![Sticky Cat](/assets/StickyCat/scan02.jpg)
