@@ -79,3 +79,12 @@ title: Sticky Cat
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-212925.png)
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-213036.png)
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-213234.png)
+
+### ニュース
+- 2016-10-18 プロジェクト発足
+- 2017-07-25 Androidでバージョン0.1をリリース
+- 2017-08-02 iOSでバージョン0.1.1をリリース
+- 2017-08-05 Androidでバージョン0.2をリリース
+- 2017-08-08 iOSでバージョン0.2をリリース
+- 2017-08-12 Androidでバージョン0.2.1をリリース
+- 2017-08-13 iOSでバージョン0.2.1をリリース
