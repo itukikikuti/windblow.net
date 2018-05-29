@@ -7,7 +7,6 @@ layout: outline
     <time>{{ post.date | date: "%Y-%m-%d" }}</time>
     {{ post.excerpt }}
     <a href="{{ post.url }}">more</a>
-    {% include share.html url = post.url %}
 </article>
 {% endfor %}
 
