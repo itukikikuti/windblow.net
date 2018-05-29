@@ -1,5 +1,5 @@
 plugins: [jekyll-paginate]
 
 title: "菊池いつきLOG"
-color: "#78B3EE"
+color: "#06F"
 paginate: 10
