@@ -1,5 +1,7 @@
 ---
 ---
+@import url("https://fonts.googleapis.com/earlyaccess/mplus1p.css");
+
 $theme: {{ site.color }};
 $white: #FFF;
 $text: #CCC;
@@ -9,7 +11,7 @@ a {
 }
 body {
     background: url("/assets/background1.jpg");
-    font-family: sans-serif;
+    font-family: "Mplus 1p";
     font-weight: 400;
     color: $text;
 }
