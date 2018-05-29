@@ -21,6 +21,8 @@ header {
     background: $color;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5) inset;
     h1 {
+        margin: 0;
+        padding: 20px;
         font-weight: 600;
         text-align: center;
     }
@@ -29,6 +31,8 @@ header {
     }
     nav ul {
         list-style: none;
+        margin: 0;
+        display: flex;
     }
     small {
         color: $back;
