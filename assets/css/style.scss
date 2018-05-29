@@ -1,16 +1,17 @@
 ---
 ---
-$color: {{ site.color }};
-$white: #CCC;
+$theme: {{ site.color }};
+$white: #FFF;
+$text: #CCC;
 a {
-    color: $color;
+    color: $theme;
     text-decoration: none;
 }
 body {
     background: url("/assets/background1.jpg");
     font-family: sans-serif;
     font-weight: 400;
-    color: $white;
+    color: $text;
 }
 header {
     top: 0;
@@ -19,7 +20,7 @@ header {
     height: 100px;
     background: url("/assets/background2.jpg") no-repeat center center;
     background-size: cover;
-    box-shadow: 0px 0px 100px rgba($color, 0.5);
+    box-shadow: 0px 0px 100px rgba($theme, 0.5);
     h1 {
         margin: 0;
         padding-top: 20px;
@@ -64,9 +65,9 @@ article {
     h2 a {
         font-weight: 900;
         font-size: 40px;
-        color: $white;
+        color: $text;
         &:hover {
-            color: $color;
+            color: $theme;
         }
     }
     time {
@@ -85,7 +86,7 @@ article {
     }
     &>a {
         display:inline-block;
-        color: $white;
+        color: $text;
         font-size: 15px;
         padding: 10px;
         border-radius: 15px;
@@ -97,8 +98,8 @@ article {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
         }
         &:nth-last-of-type(4) {
-            background: $white;
-            color: $color;
+            background: $text;
+            color: $theme;
             font-weight: 900;
         }
         &:nth-last-of-type(3) {
