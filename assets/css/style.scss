@@ -1,14 +1,14 @@
 ---
 ---
 $color: {{ site.color }};
-$fore: #FFF;
-$back: #333;
+$fore: #FFFFFF;
+$back: #181818;
 a {
     color: $color;
     text-decoration: none;
 }
 body {
-    background: $back;
+    background: url("/assets/background.jpg");
     font-family: sans-serif;
     font-weight: 400;
     color: $fore;
