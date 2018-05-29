@@ -20,7 +20,7 @@ header {
     height: 100px;
     background: url("/assets/background2.jpg") no-repeat center center;
     background-size: cover;
-    box-shadow: 0px 0px 100px $color - rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 100px rgba($color, 0.5);
     h1 {
         margin: 0;
         padding-top: 20px;
