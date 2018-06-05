@@ -30,6 +30,18 @@
         <script src="/assets/script/utility.js" defer=""></script>
     </head>
     <body>
-        {{ content }}
+        <header>
+            <h1><a href="/">{{ site.title }}</a></h1>
+            <small>© 2018 windblow</small>
+            <nav>
+                <ul>
+                    <li><a href="/feed.xml">フィード</a></li>
+                    <li><a href="/archive.html">アーカイブ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {{ content }}
+        </main>
     </body>
 </html>
