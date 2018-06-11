@@ -1,6 +1,5 @@
 ---
 ---
-@import url("https://fonts.googleapis.com/earlyaccess/mplus1p.css");
 
 $theme: {{ site.color }};
 $white: #FFF;
@@ -12,8 +11,6 @@ a {
 }
 body {
     background: $back;
-    font-family: "Mplus 1p";
-    font-weight: 400;
     color: $text;
 }
 header {
@@ -78,7 +75,6 @@ article {
     p {
         font-size: 20px;
         line-height: 1.5;
-        transform: rotateZ(0.1deg);
         a {
             text-decoration: underline;
         }
