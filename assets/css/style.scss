@@ -17,13 +17,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
     background: $theme;
     background-size: cover;
     h1 {
         margin: 0;
         padding-top: 20px;
-        font-weight: 600;
+        font-weight: bold;
         text-align: center;
     }
     a {
@@ -32,8 +31,15 @@ header {
     nav ul {
         list-style: none;
         margin: 0;
-        margin-top: 10px;
+        padding: 0;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5em;
+        li a {
+            display: block;
+            padding: 0.75em 1em;
+        }
     }
     small {
         color: $white;
@@ -62,22 +68,22 @@ main {
                 padding: 10px 30px;
                 border-radius: 999px;
                 box-shadow:
-                    0px 2px 5px rgba(0, 0, 0, 0.5),
-                    0px 2px 0px rgba($theme / 2, 1);
+                    0 2px 5px rgba(0, 0, 0, 0.5),
+                    0 2px 0 rgba($theme / 2, 1);
                 &:hover {
                     transform: translateY(2px);
-                    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
                 }
             }
         }
     }
 }
 article {
-    margin: 20px 0px;
+    margin: 20px 0;
     padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     h2 a {
-        font-weight: 900;
+        font-weight: bold;
         font-size: 40px;
         color: $text;
         &:hover {
@@ -108,11 +114,11 @@ article {
         padding: 10px 30px;
         border-radius: 999px;
         box-shadow:
-            0px 2px 5px rgba(0, 0, 0, 0.5),
-            0px 2px 0px rgba($white / 2, 1);
+            0 2px 5px rgba(0, 0, 0, 0.5),
+            0 2px 0 rgba($white / 2, 1);
         &:hover {
             transform: translateY(2px);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         }
     }
     .YouTube {
@@ -120,7 +126,7 @@ article {
         width: 100%;
         height: 0;
         padding-top: 56.25%;
-        margin: 30px 0px;
+        margin: 30px 0;
         iframe {
             position: absolute;
             top: 0;
