@@ -54,6 +54,20 @@ main {
             font-size: 20px;
             margin-left: 10px;
             margin-right: 10px;
+            a {
+                transition: 0.1s;
+                background: $theme;
+                color: $white;
+                padding: 10px 30px;
+                border-radius: 999px;
+                box-shadow:
+                    0px 2px 5px rgba(0, 0, 0, 0.5),
+                    0px 2px 0px rgba($theme / 2, 1);
+                &:hover {
+                    transform: translateY(2px);
+                    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+                }
+            }
         }
     }
 }
@@ -84,10 +98,12 @@ article {
         width: 100%;
     }
     &>a {
+        transition: 0.1s;
         display:inline-block;
         background: $white;
         color: $theme;
         font-size: 15px;
+        font-weight: bold;
         padding: 10px 30px;
         border-radius: 999px;
         box-shadow:
