@@ -3,13 +3,13 @@ layout: post
 title: Sticky Cat
 ---
 
-<div class="YouTube">
-  <iframe src="https://www.youtube.com/embed/A0u0Mv_YCr0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
 ダウンロードはこちら
 [iOS](http://appstore.com/stickycatclip)
 [Android](https://play.google.com/store/apps/details?id=net.windblow.stickycat)
+
+<div class="YouTube">
+  <iframe src="https://www.youtube.com/embed/A0u0Mv_YCr0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 ### ニュース
 - 2016-10-18 プロジェクト発足
