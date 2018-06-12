@@ -1,4 +1,6 @@
 plugins: [jekyll-paginate]
-
+gems:
+    - jekyll-minifier
+    
 color: "#0066FF"
 paginate: 5
