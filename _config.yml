@@ -1,5 +1,4 @@
 plugins: [jekyll-paginate]
 
-title: "windblow"
 color: "#0066FF"
-paginate: 10
+paginate: 5
