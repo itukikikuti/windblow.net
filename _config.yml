@@ -1,4 +1,4 @@
-plugins: [jekyll-paginate, jekyll-minifier]
+plugins: [jekyll-paginate, jekyll-minifier, jekyll-compress-images]
 
 color: "#0066FF"
 paginate: 5
