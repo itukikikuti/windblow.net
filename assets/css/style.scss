@@ -37,6 +37,7 @@ header {
         align-items: center;
         height: 2.5em;
         li a {
+            transition: 0.1s;
             display: block;
             padding: 0.65em 1em;
             &:hover {
