@@ -2,9 +2,21 @@
 layout: post
 title: Sticky Cat
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A0u0Mv_YCr0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ダウンロードはこちら
 [iOS](http://appstore.com/stickycatclip)
 [Android](https://play.google.com/store/apps/details?id=net.windblow.stickycat)
+
+### ニュース
+- 2016-10-18 プロジェクト発足
+- 2017-07-25 Androidでバージョン0.1をリリース
+- 2017-08-02 iOSでバージョン0.1.1をリリース
+- 2017-08-05 Androidでバージョン0.2をリリース
+- 2017-08-08 iOSでバージョン0.2をリリース
+- 2017-08-12 Androidでバージョン0.2.1をリリース
+- 2017-08-13 iOSでバージョン0.2.1をリリース
 
 ### ギャラリー
 ![Sticky Cat](/assets/StickyCat/scan00.jpg)
@@ -79,12 +91,3 @@ title: Sticky Cat
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-212925.png)
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-213036.png)
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-213234.png)
-
-### ニュース
-- 2016-10-18 プロジェクト発足
-- 2017-07-25 Androidでバージョン0.1をリリース
-- 2017-08-02 iOSでバージョン0.1.1をリリース
-- 2017-08-05 Androidでバージョン0.2をリリース
-- 2017-08-08 iOSでバージョン0.2をリリース
-- 2017-08-12 Androidでバージョン0.2.1をリリース
-- 2017-08-13 iOSでバージョン0.2.1をリリース
