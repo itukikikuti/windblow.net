@@ -4,7 +4,7 @@ title: Sticky Cat
 ---
 
 <div class="YouTube">
-  <iframe src="https://www.youtube.com/embed/A0u0Mv_YCr0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/A0u0Mv_YCr0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 ダウンロードはこちら
