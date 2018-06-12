@@ -1,6 +1,6 @@
 plugins: [jekyll-paginate]
-gems:
-    - jekyll-minifier
-    
+gems: - jekyll-minifier
+jekyll-minifier: exclude: 'feed.xml'
+
 color: "#0066FF"
 paginate: 5
