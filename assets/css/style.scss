@@ -40,7 +40,7 @@ header {
             display: block;
             padding: 0.65em 1em;
             &:hover {
-                border-bottom: 0.1em solid $white;
+                box-shadow: 0 -2px 0 $white inset;
             }
         }
     }
