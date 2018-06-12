@@ -1,24 +1,18 @@
-{% if page.title %}
-{% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
-{% else %}
-{% capture title %}{{ site.title }}{% endcapture %}
-{% endif %}
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="ja" xml:lang="ja">
     <head>
         <meta charset="UTF-8" />
+        <meta name="theme-color" content="{{ site.color }}" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         {% if page.id %}
-        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:description" content='{{ page.excerpt }}' />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         <meta property="og:image" content="{{ site.url }}/assets/icon256.png" />
         {% endif %}
-        <meta name="theme-color" content="{{ site.color }}" />
-        <meta name="viewport" content="width=device-width,initial-scale=1">
         
-        <title>{{ title }}</title>
+        <title>{{ page.title }}</title>
         
         <link rel="stylesheet" href="/assets/css/normalize.css" />
         <link rel="stylesheet" href="/assets/css/baguetteBox.css" />
