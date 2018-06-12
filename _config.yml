@@ -1,4 +1,4 @@
 plugins: [jekyll-paginate]
 
 color: "#0066FF"
-paginate: 5
+paginate: 2
