@@ -3,7 +3,9 @@ layout: post
 title: Sticky Cat
 ---
 
-<iframe src="https://www.youtube.com/embed/A0u0Mv_YCr0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="YouTube">
+  <iframe src="https://www.youtube.com/embed/A0u0Mv_YCr0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 ダウンロードはこちら
 [iOS](http://appstore.com/stickycatclip)
