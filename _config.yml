@@ -1,5 +1,5 @@
-plugins: [jekyll-paginate]
-gems: - jekyll-minifier
+plugins: [jekyll-paginate, jekyll-minifier]
+
 jekyll-minifier:
     exclude: 'feed.xml'
 
