@@ -5,16 +5,6 @@ $theme: {{ site.color }};
 $white: #FFF;
 $text: #CCC;
 $back: #222;
-@font-face {
-  font-family: YuGothicM;
-  font-weight: normal;
-  src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular");
-}
-@font-face {
-  font-family: YuGothicM;
-  font-weight: bold;
-  src: local("YoGothic-Bold"), local("Yu Gothic");
-}
 a {
     color: $theme;
     text-decoration: none;
@@ -22,7 +12,7 @@ a {
 body {
     background: $back;
     color: $text;
-    font-family: -apple-system, blinkMacSystemFont, "Helvetica Neue", "Segoe UI", YuGothicM, YuGothic, Meiryo, sans-serif;
+    font-family: YuGothic, "游ゴシック", sans-serif;
 }
 header {
     top: 0;
