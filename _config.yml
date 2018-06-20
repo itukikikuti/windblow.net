@@ -1,4 +1,4 @@
-plugins: [jekyll-paginate, jekyll-minifier, jekyll-compress-images]
+plugins: [jekyll-paginate, jekyll-compress-images]
 
 color: "#0066FF"
 permalink: /blog/:categories/:title
