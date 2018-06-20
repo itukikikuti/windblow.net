@@ -1,8 +1,14 @@
-plugins: [jekyll-paginate, jekyll-compress-images]
+plugins: [jekyll-paginate, jekyll-minifier, jekyll-compress-images]
 
 color: "#0066FF"
 permalink: /blog/:categories/:title
 paginate: 5
 
 jekyll-minifier:
+  remove_spaces_inside_tags: true
+  remove_multi_spaces: true
   remove_intertag_spaces: true
+  remove_quotes: true
+  
+compress_images:
+  images_path: "assets/**/*.{gif,png,jpg,jpeg,svg}"
