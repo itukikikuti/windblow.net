@@ -3,3 +3,6 @@ plugins: [jekyll-paginate, jekyll-minifier, jekyll-compress-images]
 color: "#0066FF"
 permalink: /blog/:categories/:title
 paginate: 5
+
+jekyll-minifier:
+  remove_intertag_spaces: true
