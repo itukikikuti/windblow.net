@@ -13,6 +13,7 @@ body {
     background: $back;
     color: $text;
     font-family: YuGothic, "游ゴシック medium", sans-serif;
+    overflow-y: scroll;
 }
 header {
     top: 0;
