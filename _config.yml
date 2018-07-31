@@ -3,7 +3,7 @@ plugins: [jekyll-paginate, jekyll-minifier]
 color: "#0066FF"
 permalink: /blog/:categories/:title/
 paginate: 1
-paginate_path: "blog/page:num"
+paginate_path: "test.html/page:num"
 
 jekyll-minifier:
   remove_spaces_inside_tags: true
