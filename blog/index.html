@@ -1,0 +1,28 @@
+---
+title: ブログ
+layout: default
+---
+{% for post in paginator.posts %}
+<article>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+    {{ post.excerpt }}
+    <a href="{{ post.url }}">もっと</a>
+</article>
+{% endfor %}
+
+<nav>
+    <ul>
+        {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+        <li><a href="/">前へ</a></li>
+        {% else %}
+        <li><a href="/page{{ paginator.previous_page }}">前へ</a></li>
+        {% endif %}
+        {% endif %}
+
+        {% if paginator.next_page %}
+        <li><a href="/page{{ paginator.next_page }}">次へ</a></li>
+        {% endif %}
+    </ul>
+</nav>
