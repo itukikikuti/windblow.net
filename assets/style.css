@@ -73,6 +73,25 @@ main h1 a:hover {
 article time {
     font-size: 10px;
 }
+.posts {
+    display: flex;
+    justify-content: center;
+}
+.post {
+    width: 30%;
+    height: 200px;
+    overflow: hidden;
+}
+.post > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.post h1 {
+    font-size: 20px;
+}
+.post p {
+    font-size: 15px;
+}
 .more {
     transition: 0.1s;
     display: inline-block;
