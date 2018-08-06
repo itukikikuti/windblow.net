@@ -2,25 +2,32 @@
 layout: post
 title: Sticky Cat
 ---
+<div class="badges">
+  <a class="appStoreBadge" href="https://itunes.apple.com/jp/app/sticky-cat-clip/id1263395123?mt=8">
+    <img alt="App Store からダウンロード" src="https://linkmaker.itunes.apple.com/assets/shared/badges/ja-jp/appstore-lrg.svg" />
+  </a>
+  <a class="playStoreBadge" href="https://play.google.com/store/apps/details?id=net.windblow.stickycat&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+  <img alt="Google Play で手に入れよう" src="https://play.google.com/intl/en_us/badges/images/generic/ja_badge_web_generic.png" />
+  </a>
+</div>
+App StoreとGoogle Playにて無料で配信中
 
-ダウンロードはこちら
-[iOS](http://appstore.com/stickycatclip)
-[Android](https://play.google.com/store/apps/details?id=net.windblow.stickycat)
-
-<div class="YouTube">
-  <iframe src="https://www.youtube.com/embed/A0u0Mv_YCr0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+### Videos
+<div class="embed">
+  <iframe src="https://www.youtube.com/embed/A0u0Mv_YCr0" allowfullscreen></iframe>
 </div>
 
-### ニュース
-- 2016-10-18 プロジェクト発足
-- 2017-07-25 Androidでバージョン0.1をリリース
-- 2017-08-02 iOSでバージョン0.1.1をリリース
-- 2017-08-05 Androidでバージョン0.2をリリース
-- 2017-08-08 iOSでバージョン0.2をリリース
-- 2017-08-12 Androidでバージョン0.2.1をリリース
+### History
 - 2017-08-13 iOSでバージョン0.2.1をリリース
+- 2017-08-12 Androidでバージョン0.2.1をリリース
+- 2017-08-08 iOSでバージョン0.2をリリース
+- 2017-08-05 Androidでバージョン0.2をリリース
+- 2017-08-02 iOSでバージョン0.1.1をリリース
+- 2017-07-25 Androidでバージョン0.1をリリース
+- 2016-10-18 プロジェクト発足
 
-### ギャラリー
+### Images
+<div className="gallery">
 ![Sticky Cat](/assets/StickyCat/scan00.jpg)
 ![Sticky Cat](/assets/StickyCat/scan01.jpg)
 ![Sticky Cat](/assets/StickyCat/scan02.jpg)
@@ -93,3 +100,4 @@ title: Sticky Cat
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-212925.png)
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-213036.png)
 ![Sticky Cat](/assets/StickyCat/Screenshot_20170811-213234.png)
+</div>
