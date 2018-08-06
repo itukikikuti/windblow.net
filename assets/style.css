@@ -54,6 +54,15 @@ main {
 main a {
     color: var(--theme-color);
 }
+main p {
+    line-height: 1.5;
+}
+main img {
+    width: 100%;
+}
+main h1 {
+    font-size: 40px;
+}
 main h1 a {
     color: var(--text-color);
     text-decoration: none;
@@ -61,11 +70,15 @@ main h1 a {
 main h1 a:hover {
     color: var(--theme-color);
 }
+article time {
+    font-size: 10px;
+}
 article .more {
     transition: 0.1s;
     display: inline-block;
     background: white;
     color: var(--theme-color);
+    text-decoration: none;
     font-size: 15px;
     font-weight: bold;
     padding: 10px 30px;
