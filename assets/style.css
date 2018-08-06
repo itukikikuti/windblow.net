@@ -81,6 +81,10 @@ article time {
     width: 30%;
     height: 200px;
     overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 .post > a {
     text-decoration: none;
@@ -88,6 +92,7 @@ article time {
 }
 .post h1 {
     font-size: 20px;
+    margin: 0;
 }
 .post p {
     font-size: 15px;
