@@ -78,6 +78,9 @@ article time {
     justify-content: center;
     height: 30vw;
 }
+.posts:before {
+    content: "";
+}
 .post {
     width: 30%;
     position: relative;
@@ -87,7 +90,7 @@ article time {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
-.post::after {
+.post:after {
     content: "";
     position: absolute;
     bottom: 0;
