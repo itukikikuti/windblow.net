@@ -1,6 +1,7 @@
 ---
 layout: post
 title: qawsedrftgyhujiko
+category: afaffweafaw
 ---
 くぁｗせｄｒｆｔｇｙふじこｌｐぉきじゅｈｙｇｔｆｒですぁくぁｗせｄｒｆｔｇｙふじこｌｐぉきじゅｈｙｇｔｆｒですぁくぁｗせｄｒｆｔｇｙふじこｌｐ
 
