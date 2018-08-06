@@ -2,6 +2,16 @@
 title: windblow
 layout: default
 ---
+<h3>新着</h3>
+{% for post in site.posts limit:3 %}
+<section>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+    {{ post.excerpt }}
+    <a href="{{ post.url }}">もっと</a>
+</section>
+{% endfor %}
+
 <p>windblowは菊池いつきが率いる、ゲーム開発チーム。開発タイトルにSticky Catなどがある。</p>
 <h3>菊池いつき</h3>
 <ul>
