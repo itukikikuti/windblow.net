@@ -2,29 +2,16 @@
 title: windblow
 layout: default
 ---
-<p>windblowは菊池いつきによるゲーム開発チームです。</p>
-
-{% for post in paginator.posts %}
-<article>
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-    {{ post.excerpt }}
-    <a href="{{ post.url }}">もっと</a>
-</article>
-{% endfor %}
-
-<nav>
-    <ul>
-        {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-        <li><a href="/">前へ</a></li>
-        {% else %}
-        <li><a href="/page{{ paginator.previous_page }}">前へ</a></li>
-        {% endif %}
-        {% endif %}
-
-        {% if paginator.next_page %}
-        <li><a href="/page{{ paginator.next_page }}">次へ</a></li>
-        {% endif %}
-    </ul>
-</nav>
+<p>windblowは菊池いつきが率いる、ゲーム開発チーム。開発タイトルにSticky Catなどがある。</p>
+<h3>菊池いつき</h3>
+<ul>
+    <li>
+        <a href="https://twitter.com/itukikikuti">Twitter</a>
+    </li>
+    <li data-reactid="22">
+        <a href="https://gitlab.com/itukikikuti">GitLab</a>
+    </li>
+    <li data-reactid="24">
+        <a href="https://github.com/itukikikuti">GitHub</a>
+    </li>
+</ul>
