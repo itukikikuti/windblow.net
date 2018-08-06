@@ -81,13 +81,15 @@ article time {
     width: 30%;
     position: relative;
     overflow: hidden;
-    padding: 10px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 .post:before {
     content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
 }
 .post:after {
     content: "";
@@ -102,6 +104,10 @@ article time {
 .post > a {
     text-decoration: none;
     color: var(--text-color);
+    position: absolute;
+    margin: 10px;
+    top: 0;
+    left: 0;
 }
 .post h1 {
     font-size: 2.5vw;
