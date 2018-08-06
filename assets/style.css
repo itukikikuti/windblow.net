@@ -106,6 +106,7 @@ article time {
     display: inline-block;
     background: var(--theme-color);
     color: white;
+    text-decoration: none;
     padding: 10px 30px;
     border-radius: 999px;
     box-shadow:
