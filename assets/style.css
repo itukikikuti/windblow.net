@@ -58,7 +58,9 @@ main p {
     line-height: 1.5;
 }
 main img {
-    width: 100%;
+    display: block;
+    max-width: 100%;
+    margin: 5px auto;
 }
 main h1 {
     font-size: 40px;
