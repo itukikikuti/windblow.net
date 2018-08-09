@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns#">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="theme-color" content="#06F" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        {% if page.id %}
-        <meta property="og:title" content="{{ page.title }}" />
-        <meta property="og:description" content='{{ page.excerpt }}' />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-        <meta property="og:image" content="{{ site.url }}/assets/favicon.png" />
-        {% endif %}
-        <title>{{ page.title }}</title>
-        <link rel="icon" href="/assets/favicon.png" />
-        <link rel="stylesheet" href="/assets/normalize.css" />
-        <link rel="stylesheet" href="/assets/style.css" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122720908-2"></script>
-        <script>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#06F" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" /> {% if page.id %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content='{{ page.excerpt }}' />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}/assets/favicon.png" /> {% endif %}
+    <title>{{ page.title }}</title>
+    <link rel="icon" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="/assets/normalize.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122720908-2"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag("js", new Date());
         gtag("config", "UA-122720908-2");
-        </script>
-    </head>
-    <body>
-        <header>
-            <h1><a href="/">windblow</a></h1>
-            <small>© 2016 windblow</small>
-            <nav>
-                <ul>
-                    <li><a href="/">トップ</a></li>
-                    <li><a href="/StickyCat/">Sticky Cat</a></li>
-                    <li><a href="/blog/">ブログ</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            {{ content }}
-        </main>
-    </body>
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="/">windblow</a>
+        </h1>
+        <small>© 2016 windblow</small>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">トップ</a>
+                </li>
+                <li>
+                    <a href="/games/StickyCat/">Sticky Cat</a>
+                </li>
+                <li>
+                    <a href="/posts/">投稿</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+</body>
+
 </html>

@@ -1,8 +1,8 @@
 plugins: [jekyll-paginate, jekyll-minifier]
 
-permalink: /blog/:categories/:title/
+permalink: /posts/:categories/:title/
 paginate: 10
-paginate_path: "blog/page:num"
+paginate_path: "posts/page:num"
 
 jekyll-minifier:
   remove_spaces_inside_tags: true
