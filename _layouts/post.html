@@ -5,11 +5,11 @@ layout: default
     <h1>
         <a href="{{ page.url }}">{{ page.title }}</a>
     </h1>
-    {% if page.categories %}
-    <a class="category" href="/posts/{{ page.categories }}/">{{ page.categories }}</a>
-    {% endif %}
     {% if page.date %}
     <time>{{ page.date | date: "%Y-%m-%d" }}</time>
+    {% endif %}
+    {% if page.categories %}
+    <a class="category" href="/posts/{{ page.categories }}/">{{ page.categories }}</a>
     {% endif %}
     {{ content }}
 </article>

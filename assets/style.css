@@ -73,9 +73,7 @@ main h1 a:hover {
     color: var(--theme-color);
 }
 article time {
-    display: block;
     font-size: 10px;
-    text-align: right;
 }
 .posts {
     display: flex;
