@@ -6,7 +6,7 @@ layout: default
         <a href="{{ page.url }}">{{ page.title }}</a>
     </h1>
     {% if page.categories %}
-    <a class="tag" href="/posts/{{ page.categories }}/">{{ page.categories }}</a>
+    <a class="category" href="/posts/{{ page.categories }}/">{{ page.categories }}</a>
     {% endif %}
     {% if page.date %}
     <time>{{ page.date | date: "%Y-%m-%d" }}</time>
