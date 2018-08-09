@@ -1,4 +1,8 @@
---- title: ブログ layout: default --- {% for post in paginator.posts %}
+---
+title: ブログ
+layout: default
+---
+{% for post in paginator.posts %}
 <article>
     <h1>
         <a href="{{ post.url }}">{{ post.title }}</a>
