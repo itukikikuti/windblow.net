@@ -73,7 +73,9 @@ main h1 a:hover {
     color: var(--theme-color);
 }
 article time {
+    display: block;
     font-size: 10px;
+    text-align: right;
 }
 .posts {
     display: flex;
@@ -125,7 +127,7 @@ article time {
     text-decoration: none;
     border-radius: 999px;
     margin: 10px;
-    padding: 5px 15px 5px 5px;
+    padding: 5px 15px 5px 8px;
 }
 .tag:before {
     content: "● ";
