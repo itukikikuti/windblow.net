@@ -6,5 +6,6 @@ layout: default
         <a href="{{ page.url }}">{{ page.title }}</a>
     </h1>
     <time>{{ page.date | date: "%Y-%m-%d" }}</time>
+    {{ page.categories }}
     {{ content }}
 </article>
