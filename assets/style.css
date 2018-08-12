@@ -72,6 +72,9 @@ main h1 a {
 main h1 a:hover {
     color: var(--theme-color);
 }
+main pre {
+    overflow-x: scroll;
+}
 article time {
     font-size: 10px;
 }
