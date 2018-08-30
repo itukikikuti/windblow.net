@@ -75,8 +75,7 @@ main h1 a:hover {
 main pre {
     overflow-x: scroll;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border: solid 1px var(--text-color);
 }
 article time {
     font-size: 10px;
@@ -200,4 +199,8 @@ article time {
     width: auto;
     height: 150px;
     margin: 5px;
+}
+p code {
+    background: #444;
+    padding: 5px;
 }
