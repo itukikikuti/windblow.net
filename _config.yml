@@ -4,6 +4,7 @@ permalink: /posts/:categories/:title/
 paginate: 10
 paginate_path: "posts/page:num"
 highlighter: rouge
+linenos: true
 
 jekyll-minifier:
   remove_spaces_inside_tags: true
