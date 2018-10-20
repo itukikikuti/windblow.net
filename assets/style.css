@@ -195,6 +195,9 @@ article time {
     height: 150px;
     margin: 5px;
 }
+code pre {
+    margin: 0;
+}
 p code {
     background: #444;
     padding: 5px;
@@ -205,7 +208,8 @@ pre.highlight {
 }
 pre.lineno {
     text-align: right;
-    color: var(--text-color);
+    background: var(--text-color);
+    color: var(--background-color);
     border-right: 1px solid;
     margin-right: 5px;
     padding-right: 5px;
