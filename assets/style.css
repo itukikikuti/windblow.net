@@ -72,11 +72,6 @@ main h1 a {
 main h1 a:hover {
     color: var(--theme-color);
 }
-main pre {
-    overflow-x: scroll;
-    padding: 10px;
-    border: solid 1px var(--text-color);
-}
 article time {
     font-size: 10px;
 }
@@ -203,4 +198,15 @@ article time {
 p code {
     background: #444;
     padding: 5px;
+}
+pre.highlight {
+    overflow-x: scroll;
+    border: solid 1px var(--text-color);
+}
+pre.lineno {
+    text-align: right;
+    color: var(--text-color);
+    border-right: 1px solid;
+    margin-right: 5px;
+    padding-right: 5px;
 }
