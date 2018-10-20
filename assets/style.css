@@ -198,6 +198,9 @@ article time {
 code pre {
     margin: 0;
 }
+code table {
+    border-spacing: 0;
+}
 p code {
     background: #444;
     padding: 5px;
