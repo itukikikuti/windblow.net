@@ -47,7 +47,7 @@ int main()
 そしてメインループという物も書きます。ゲームループと言ったりもします。メインループがないとウィンドウが出たと同時にアプリケーションが終わってウィンドウも消えてしまいます。
 
 ``` cpp
-    ...
+    …
     ShowWindow(handle, SW_SHOWNORMAL);
 
     while (true)
@@ -79,7 +79,7 @@ int main()
 さて、ウィンドウのサイズを幅640ピクセル、高さ480ピクセルにしてるんですが、実は出来てないんです。640x480という風にしてしまうと、ウィンドウのタイトルバーとかウィンドウの枠とかも含めて、640x480になってしまうんです。それに、サイズだけでなくウィンドウの位置も左上になってしまってます。中央にしたほうが良いです。`SetWindowPos`を使えばウィンドウの位置と大きさを変えられます。
 
 ``` cpp
-    ...
+    …
     HWND handle = CreateWindowW(L"GameLib", L"GameLib", WS_OVERLAPPEDWINDOW, 0, 0, 0, 0, nullptr, nullptr, instance, nullptr);
 
     RECT windowRect = {};
@@ -95,10 +95,24 @@ int main()
     SetWindowPos(handle, nullptr, x, y, w, h, SWP_FRAMECHANGED);
 
     ShowWindow(handle, SW_SHOWNORMAL);
-    ...
+    …
 ```
 
 こんな感じで`CreateWindowW`の下に書きました。位置と大きさの計算がちょっとややこしいですね。`CreateWindowW`に渡していた`0, 0, 640, 480`は`0, 0, 0, 0`に変えてます。
+
+あとはウィンドウプロシージャーも書いておきましょう。今はウィンドウの右上のＸボタンを押してもアプリケーションが終わりません。ウィンドウプロシージャを書けばそれが治ります。
+
+``` cpp
+LRESULT CALLBACK ProceedMessage(HWND window, UINT message, WPARAM wParam, LPARAM lParam)
+{
+    if (message == WM_DESTROY)
+        PostQuitMessage(0);
+
+    return DefWindowProcW(window, message, wParam, lParam);
+}
+```
+
+こういう関数を書いて`windowClass.lpfnWndProc = DefWindowProcW;`を`windowClass.lpfnWndProc = ProceedMessage;`にすれば出来ます。`DefWindowProcW`はデフォルトで用意してあるウィンドウプロシージャです。それとは別に自分でウィンドウプロシージャを用意できます。それが上の関数です。自分でウィンドウプロシージャを書くと例えばウィンドウの大きさが変わったらこうするとかウィンドウが消えたらどうするとか自分で処理を追加出来ます。
 
 では、今までのコードをクラスにしてみましょう。Window.hppとWindow.cppというファイルを作ってください。
 
