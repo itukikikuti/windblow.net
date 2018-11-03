@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ウィンドウを出す
+title: Windows APIでウィンドウを出す
 category: DirectX11
 ---
 
