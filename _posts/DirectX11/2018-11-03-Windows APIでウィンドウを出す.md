@@ -2,6 +2,7 @@
 layout: post
 title: Windows APIでウィンドウを出す
 category: DirectX11
+date: 2018-11-03 00:00:00
 ---
 
 最初はウィンドウを出してみましょう。ウィンドウがないとゲームで何が起こってるのか全然わかりませんからね。Visual StudioでC++の空のプロジェクトを作ってください。それからSource.cppというファイルを作ってください。別にSource.cppという名前じゃなくてもいいですけどね。
