@@ -16,7 +16,7 @@ int main()
 
 これがC++における最小のコードですよね。このmain関数がエントリーポイントと言ってプログラムのスタート地点です。知らない人の為に全部説明していきますよ！実行したらコンソールウィンドウが出ます。
 
-さて、ウィンドウを出しましょう。Windows APIでは`CreateWindow`でウィンドウを作って`ShowWindow`でウィンドウを表示するとウィンドウを出せます、ざっくりいうと。
+さて、Windows APIでは`CreateWindow`でウィンドウを作って`ShowWindow`でウィンドウを表示するとウィンドウを出せます、ざっくりいうと。
 
 ``` cpp
 // Source.cpp
@@ -76,7 +76,7 @@ int main()
 
 コンソールウィンドウを消す方法もあります。実はWindowsのアプリケーション専用のエントリーポイントという物があって、`int main()`を`int APIENTRY wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)`に変えて実行すると普通のウィンドウだけ出せます。このWinMainというのがWindows専用のエントリーポイントです。
 
-さて、ウィンドウのサイズを幅640ピクセル、高さ480ピクセルにしてるんですが、実は出来てないんです。640x480という風にしてしまうと、ウィンドウのタイトルバーとかウィンドウの枠とかも含めて、640x480になってしまうんです。それに、サイズだけでなくウィンドウの位置も左上になってしまってます。中央にしたほうが良いです。`SetWindowPos`を使えばウィンドウの位置と大きさを変えられます。
+さて、ウィンドウのサイズを幅640ピクセル、高さ480ピクセルにしてるんですが、実は出来てないんです。640x480という風にしてしまうと、ウィンドウのタイトルバーとかウィンドウの枠とかも含めて、640x480になってしまうんです。それに、ウィンドウの位置も左上になってしまってますから、中央にしたほうが良いです。`SetWindowPos`を使えばウィンドウの位置と大きさを変えられます。
 
 ``` cpp
     …
@@ -118,6 +118,7 @@ LRESULT CALLBACK ProceedMessage(HWND window, UINT message, WPARAM wParam, LPARAM
 
 ``` cpp
 // Window.hpp
+#pragma once
 #define OEMRESOURCE
 #include <Windows.h>
 #include <DirectXMath.h>
