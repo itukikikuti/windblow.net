@@ -7,8 +7,8 @@ date: 2018-11-03 00:00:00
 
 最初はウィンドウを出してみましょう。ウィンドウがないとゲームで何が起こってるのか全然わかりませんからね。Visual StudioでC++の空のプロジェクトを作ってください。それからSource.cppというファイルを作ってください。別にSource.cppという名前じゃなくてもいいですけどね。
 
+<small>Source.cpp</small>
 ``` cpp
-// Source.cpp
 int main()
 {
     return 0;
@@ -17,10 +17,10 @@ int main()
 
 これがC++における最小のコードですよね。このmain関数がエントリーポイントと言ってプログラムのスタート地点です。知らない人の為に全部説明していきますよ！実行したらコンソールウィンドウが出ます。
 
-さて、Windows APIでは`CreateWindow`でウィンドウを作って`ShowWindow`でウィンドウを表示するとウィンドウを出せます、ざっくりいうと。
+さて、Windows APIではCreateWindow関数でウィンドウを作ってShowWindow関数でウィンドウを表示するとウィンドウを出せます、ざっくりいうと。
 
+<small>Source.cpp</small>
 ``` cpp
-// Source.cpp
 #define OEMRESOURCE
 #include <Windows.h>
 
@@ -43,7 +43,7 @@ int main()
 }
 ```
 
-具体的にはこんな感じのコードを書きます。へぇこう書くのか、くらいに思っとけば大丈夫です。ぶっちゃけ私も定型文くらいにしか考えてませんし、全部覚えてないので書くときは自分の過去のコードとか見て書きます。Windows APIを使うのでWindows.hをインクルードします。`#define OEMRESOURCE`というのは、`LoadImageW`に渡している`OCR_NORMAL`を使えるようにするためのものです。
+具体的にはこんな感じのコードを書きます。へぇこう書くのか、くらいに思っとけば大丈夫です。ぶっちゃけ私も定型文くらいにしか考えてませんし、全部覚えてないので書くときは自分の過去のコードとか見て書きます。Windows APIを使うのでWindows.hをインクルードします。#define OEMRESOURCEというのは、LoadImageW関数に渡しているOCR_NORMALを使えるようにするためのものです。
 
 そしてメインループというものも書きます。ゲームループと言ったりもします。メインループがないとウィンドウが出たと同時にアプリケーションが終わってウィンドウも消えてしまいます。
 
@@ -73,11 +73,11 @@ int main()
 }
 ```
 
-`ShowWindow`の下にメインループの下にメインループを書きました。`return 0;`は一番最後の行にないとダメです。メインループの前に`return 0;`があるとメインループの前にアプリケーションが終わるので意味が無いです。`PeekMessageW`とか`TranslateMessage`とか`DispatchMessageW`はウィンドウメッセージの処理です。これをしないとウィンドウを動かしたり、大きさを変えたり出来ません。実行してみましょう！ウィンドウ出ましたね！
+ShowWindow関数の下にメインループの下にメインループを書きました。return 0;は一番最後の行にないとダメです。メインループの前にreturn 0;があるとメインループの前にアプリケーションが終わるので意味が無いです。PeekMessageW関数とかTranslateMessage関数とかDispatchMessageW関数はウィンドウメッセージの処理です。これをしないとウィンドウを動かしたり、大きさを変えたり出来ません。実行してみましょう！ウィンドウ出ましたね！
 
-コンソールウィンドウを消す方法もあります。実はWindowsのアプリケーション専用のエントリーポイントというものがあって、`int main()`を`int APIENTRY wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)`に変えて実行すると普通のウィンドウだけ出せます。このWinMainというのがWindows専用のエントリーポイントです。
+コンソールウィンドウを消す方法もあります。実はWindowsのアプリケーション専用のエントリーポイントというものがあって、int main()をint APIENTRY wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)に変えて実行すると普通のウィンドウだけ出せます。このWinMainというのがWindows専用のエントリーポイントです。
 
-さて、ウィンドウのサイズを幅640ピクセル、高さ480ピクセルにしてるんですが、実は出来てないんです。640x480という風にしてしまうと、ウィンドウのタイトルバーとかウィンドウの枠とかも含めて、640x480になってしまうんです。それに、ウィンドウの位置も左上になってしまってますから、中央にしたほうが良いです。`SetWindowPos`を使えばウィンドウの位置と大きさを変えられます。
+さて、ウィンドウのサイズを幅640ピクセル、高さ480ピクセルにしてるんですが、実は出来てないんです。640x480という風にしてしまうと、ウィンドウのタイトルバーとかウィンドウの枠とかも含めて、640x480になってしまうんです。それに、ウィンドウの位置も左上になってしまってますから、中央にしたほうが良いです。SetWindowPos関数を使えばウィンドウの位置と大きさを変えられます。
 
 ``` cpp
     …
@@ -99,7 +99,7 @@ int main()
     …
 ```
 
-こんな感じで`CreateWindowW`の下に書きました。位置と大きさの計算がちょっとややこしいですね。`CreateWindowW`に渡していた`0, 0, 640, 480`は`0, 0, 0, 0`に変えてます。
+こんな感じでCreateWindowW関数の下に書きました。位置と大きさの計算がちょっとややこしいですね。CreateWindowW関数に渡していた0, 0, 640, 480は0, 0, 0, 0に変えてます。
 
 あとはウィンドウプロシージャーも書いておきましょう。今はウィンドウの右上のＸボタンを押してもアプリケーションが終わりません。ウィンドウプロシージャを書けばそれが治ります。
 
@@ -113,12 +113,12 @@ LRESULT CALLBACK ProceedMessage(HWND window, UINT message, WPARAM wParam, LPARAM
 }
 ```
 
-こういう関数を書いて`windowClass.lpfnWndProc = DefWindowProcW;`を`windowClass.lpfnWndProc = ProceedMessage;`にすれば出来ます。`DefWindowProcW`はデフォルトで用意してあるウィンドウプロシージャです。それとは別に自分でウィンドウプロシージャを用意できます。それが上の関数です。自分でウィンドウプロシージャを書くと例えばウィンドウの大きさが変わったらこうするとかウィンドウが消えたらどうするとか自分で処理を追加出来ます。
+こういう関数を書いてwindowClass.lpfnWndProc = DefWindowProcW;をwindowClass.lpfnWndProc = ProceedMessage;にすれば出来ます。DefWindowProcW関数はデフォルトで用意してあるウィンドウプロシージャです。それとは別に自分でウィンドウプロシージャを用意できます。それが上の関数です。自分でウィンドウプロシージャを書くと例えばウィンドウの大きさが変わったらこうするとかウィンドウが消えたらどうするとか自分で処理を追加出来ます。
 
 では、今までのコードをクラスにしてみましょう。Window.hppとWindow.cppというファイルを作ってください。
 
+<small>Window.hpp</small>
 ``` cpp
-// Window.hpp
 #pragma once
 #define OEMRESOURCE
 #include <Windows.h>
@@ -141,8 +141,8 @@ private:
 };
 ```
 
+<small>Window.cpp</small>
 ``` cpp
-// Window.cpp
 #include "Window.hpp"
 
 const wchar_t* Window::name = L"GameLib";
@@ -219,8 +219,8 @@ LRESULT CALLBACK Window::ProceedMessage(HWND window, UINT message, WPARAM wParam
 }
 ```
 
+<small>Source.cpp</small>
 ``` cpp
-// Source.cpp
 #include "Window.hpp"
 
 int APIENTRY wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)
@@ -236,5 +236,5 @@ int APIENTRY wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)
 }
 ```
 
-こんな感じでクラス化してみました。Initialize関数でウィンドウ出して、Update関数がメインループを回してます。`GetHandle`とか`GetSize`は他のところで使いそうなので書いておきました。
+こんな感じでクラス化してみました。Initialize関数でウィンドウ出して、Update関数がメインループを回してます。Window::GetHandle関数とかWindow::GetSize関数は他のところで使いそうなので書いておきました。
 ダウンロードしたい人はGitHubに[サンプルリポジトリ](https://github.com/itukikikuti/DirectX11Sample)があるので、ぜひダウンロードしてください。
