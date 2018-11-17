@@ -101,7 +101,7 @@ ShowWindow関数の下にメインループの下にメインループを書き�
 
 こんな感じでCreateWindowW関数の下に書きました。位置と大きさの計算がちょっとややこしいですね。CreateWindowW関数に渡していた`0, 0, 640, 480`は`0, 0, 0, 0`に変えてます。
 
-あとはウィンドウプロシージャーも書いておきましょう。今はウィンドウの右上のＸボタンを押してもアプリケーションが終わりません。ウィンドウプロシージャを書けばそれが治ります。
+あとはウィンドウプロシージャも書いておきましょう。今はウィンドウの右上のＸボタンを押してもアプリケーションが終わりません。ウィンドウプロシージャを書けばそれが治ります。
 
 ``` cpp
 LRESULT CALLBACK ProceedMessage(HWND window, UINT message, WPARAM wParam, LPARAM lParam)
@@ -236,5 +236,5 @@ int APIENTRY wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)
 }
 ```
 
-こんな感じでクラス化してみました。Window::Initialize関数でウィンドウ出して、Window::Update関数がメインループを回してます。Window::GetHandle関数とかWindow::GetSize関数は他のところで使いそうなので書いておきました。
+こんな感じでクラスにしてみました。Window::Initialize関数でウィンドウ出して、Window::Update関数がメインループを回してます。Window::GetHandle関数とかWindow::GetSize関数は他のところで使いそうなので書いておきました。
 ダウンロードしたい人はGitHubに[サンプルリポジトリ](https://github.com/itukikikuti/DirectX11Sample)があるので、ぜひダウンロードしてください。
